@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário e Tabela</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h2>Formulário de Notas</h2>
+
+<form id="formulario">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome"><br><br>
+  
+  <label for="matricula">Matrícula:</label><br>
+  <input type="text" id="matricula" name="matricula"><br><br>
+  
+  <label for="nota1">Nota 1:</label><br>
+  <input type="number" id="nota1" name="nota1" step="0.01"><br><br>
+  
+  <label for="nota2">Nota 2:</label><br>
+  <input type="number" id="nota2" name="nota2" step="0.01"><br><br>
+  
+  <input type="button" value="Enviar" onclick="enviarNota()">
+</form>
+
+<h2>Notas Cadastradas</h2>
+
+<table id="tabela">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Matrícula</th>
+      <th>Nota 1</th>
+      <th>Nota 2</th>
+      <th>Média</th>
+      <th>Situação</th>
+    </tr>
+  </thead>
+  <tbody id="corpo-tabela">
+  </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
